@@ -1,3 +1,6 @@
+// my first tackle at rust;
+
+
 // rust guessing game;
 use std::io;
 use rand::Rng;
