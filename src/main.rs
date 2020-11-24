@@ -4,7 +4,6 @@ use rand::Rng;
 use std::cmp::Ordering;
 
 fn main() {
-
     println!("Guess the number");
 
     // createa a new random number from rand library
