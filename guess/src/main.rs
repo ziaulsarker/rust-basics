@@ -2,8 +2,12 @@
 use std::io;
 use rand::Rng;
 use std::cmp::Ordering;
+use std::mem::size_of_val;
 
 fn main() {
+    let n: u32 = 123456789;
+
+    println!("num is {} and the memory is {}", n, size_of_val(&n));
     println!("Guess the number");
 
     // createa a new random number from rand library
