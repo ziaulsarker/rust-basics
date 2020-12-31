@@ -1,6 +1,7 @@
 #![allow(dead_code)]
 
 mod sh;
+mod string;
 
 fn sale_price(price: i32) -> i32 {
     if is_even(price) {
@@ -22,11 +23,14 @@ fn main() {
     println!("10th fib number {}", get_nth_fib_num(10));
 
     sh::stack_and_heap();
-    
+
     let mut s = String::from("hello");
     s.push_str(" world");
 
     println!("{}", s);
+
+    let my_sentence = String::from("nigga this my first sting maipulation in rust");
+    println!("{} is the first word in my sentence", string::find_first_word(&my_sentence));
 }
 
 fn convert_temp(mut temp: i32, cal_fah: bool) -> i32 {
