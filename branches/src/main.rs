@@ -15,6 +15,20 @@ fn is_even(num: i32) -> bool {
     num % 2 == 0
 }
 fn main() {
+    struct Person {
+        name: String,
+        age: u32,
+    }
+
+    impl Person {
+        fn name(&self) -> String {
+            self.name
+        }
+    }
+
+
+    println!("hi im {}", ziaul.name());
+
     let test_s = String::from("this is a sentence");
     println!("{:?} is in bytes", &test_s.as_bytes());
 
