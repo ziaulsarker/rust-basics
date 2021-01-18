@@ -21,10 +21,12 @@ fn main() {
     }
 
     impl Person {
-        fn name(&self) -> String {
-            self.name
+        fn name(&self) -> &str {
+            &self.name
         }
     }
+
+    let ziaul = Person { name: String::from("ziaul"), age: 30 };
 
 
     println!("hi im {}", ziaul.name());
